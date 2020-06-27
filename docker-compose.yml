@@ -3,13 +3,13 @@ version: "3.7"
 services:
     # 1つのコンテナの名前を定義
     # これ+プロジェクト(ディレクトリ)名がimage名となる
-    latest:
+    mla:
         # ./にあるDockerfileを使う と言う意味
         build: .
         # image名をここで編集する(変える)
-        image: rrrrind/latest
+        image: rrrrind/mla
         # container名
-        container_name: "latest"
+        container_name: "mla"
         # ポート番号の指定(ホスト:コンテナ)
         ports:
           - 9990:9990
